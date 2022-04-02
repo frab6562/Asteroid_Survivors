@@ -13,9 +13,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, 0, 1);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0, 0, -1);
         }
     }
 }
