@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject impactEffect;
     public float speed = 20f;
     public Rigidbody2D rb;
 
@@ -19,8 +18,6 @@ public class Bullet : MonoBehaviour
     {
         //if()
         Debug.Log(hitInfo.name);
-        Destroy(gameObject);
-
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        //Destroy(gameObject);
     }
 }
